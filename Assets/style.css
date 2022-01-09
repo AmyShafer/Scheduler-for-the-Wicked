@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Croissant+One&family=Darker+Grotesque&family=Flamenco&family=Merienda&family=Seaweed+Script&display=swap');
+
+/* SELECTORS are alphabetized */
+
 :root {
   --gothic-grey: #929292;
   --fresh-dirt: #52322c;
-  --grave-roses: #bb0000; 
+  --roses-on-your-grave: #bb0000; 
   --grim-reaper: #030100;
-  --new-grass: #0c6800;
+  --mossy-headstone: #0c6800;
   --blue-is-the-night: #04007E;
-  --decay: #95746a;
-  --go-towards-the-white: #fffff0
+  --worm-food: #95746a;
+  --go-towards-the-white: #fffff0;
 }
 
 body {
@@ -25,16 +28,36 @@ textarea {
   resize: none;
   font-family: 'Croissant One', cursive;
   color: var(--go-towards-the-white);
-  border-left: 1px solid var(--new-grass);
+  border-left: 1px solid var(--worm-food);
   padding: 10px;
 }
 
 textarea:active {
-  background-color: var(--new-grass);
+  background-color: var(--mossy-headstone);
 }
 
 textarea:focus {
-  background-color: var(--grave-roses);
+  background-color: var(--roses-on-your-grave);
+}
+
+/* CLASSES are alphabetized */
+
+.description {
+  font-family: 'Flamenco', cursive;
+  font-size: 1.75em;
+  white-space: pre-wrap;
+}
+
+.display-3 {
+  padding: 10px;
+  font-family: 'Merienda', cursive;
+  font-weight: 600;
+}
+
+.hour {
+  background-color: var(--grim-reaper);
+  color: var(--roses-on-your-grave);
+  border-top: 1px dashed var(--roses-on-your-grave);
 }
 
 .jumbotron {
@@ -45,22 +68,40 @@ textarea:focus {
   border-bottom: 10px solid var(--grim-reaper);
 }
 
-.display-3 {
-  padding: 10px;
-  font-family: 'Merienda', cursive;
-  font-weight: 600;
-}
-
 .lead {
   padding: 5px;
   font-size: 2em;
   font-family: 'Seaweed Script', cursive;
 }
 
-.description {
-  font-family: 'Flamenco', cursive;
-  font-size: 1.75em;
+.row {
   white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid var(--roses-on-your-grave);
+}
+
+.saveBtn {
+  border-left: 1px solid var(--go-towards-the-white);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--grim-reaper);
+  color: var(--roses-on-your-grave);
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.saveBtn:hover {
+  border-left: 1px solid var(--go-towards-the-white);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--worm-food);
+  color: var(--grim-reaper);
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  color: var(--mossy-headstone);
 }
 
 .time-block {
@@ -69,59 +110,10 @@ textarea:focus {
   font-family: 'Belgrano', serif;
 }
 
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid var(--grave-roses);
-}
-
-.hour {
-  background-color: var(--grim-reaper);
-  color: var(--grave-roses);
-  border-top: 1px dashed var(--grave-roses);
-}
-
-.past {
-  background-color: var(--tombstone-grey);
-  color: var(--go-towards-the-white);
-}
-
-.present {
-  background-color: var(--grave-roses);
-  color: var(--go-towards-the-white);
-}
-
-.future {
-  background-color: var(--fresh-dirt);
-  color: var(--go-towards-the-white);
-}
-
-.saveBtn {
-  border-left: 1px solid var(--go-towards-the-white);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: var(--grim-reaper);
-  color: var(--grave-roses);
-  font-family: 'Darker Grotesque', sans-serif;
-}
-
-.saveBtn:hover {
-  border-left: 1px solid var(--go-towards-the-white);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: var(--fresh-dirt);
-  color: var(--tombstone-grey);
-  font-family: 'Darker Grotesque', sans-serif;
-}
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
-  color: var(--new-grass);
-}
+/* IDs are alphabetized */
 
 #currentDay {
-  color: var(--grave-roses);
+  color: var(--roses-on-your-grave);
   font-family: 'Croissant One', cursive;
   font-size: 1.75em;
 }
