@@ -6,10 +6,12 @@
   --grim-reaper: #030100;
   --new-grass: #0c6800;
   --blue-is-the-night: #04007E;
-  --tombstone-grey: #95746a;
+  --decay: #95746a;
+  --go-towards-the-white: #fffff0
 }
 
 body {
+  padding: 7px;
   background-color: var(--gothic-grey);
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -22,7 +24,7 @@ textarea {
   border: none;
   resize: none;
   font-family: 'Croissant One', cursive;
-  color: #fff;
+  color: var(--go-towards-the-white);
   border-left: 1px solid var(--new-grass);
   padding: 10px;
 }
@@ -32,7 +34,7 @@ textarea:active {
 }
 
 textarea:focus {
-  background-color: var(--fresh-dirt);
+  background-color: var(--grave-roses);
 }
 
 .jumbotron {
@@ -81,21 +83,21 @@ textarea:focus {
 
 .past {
   background-color: var(--tombstone-grey);
-  color: blanchedalmond;
+  color: var(--go-towards-the-white);
 }
 
 .present {
   background-color: var(--grave-roses);
-  color: blanchedalmond;
+  color: var(--go-towards-the-white);
 }
 
 .future {
   background-color: var(--fresh-dirt);
-  color: blanchedalmond;
+  color: var(--go-towards-the-white);
 }
 
 .saveBtn {
-  border-left: 1px solid blanchedalmond;
+  border-left: 1px solid var(--go-towards-the-white);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: var(--grim-reaper);
@@ -104,7 +106,7 @@ textarea:focus {
 }
 
 .saveBtn:hover {
-  border-left: 1px solid blanchedalmond;
+  border-left: 1px solid var(--go-towards-the-white);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: var(--fresh-dirt);
