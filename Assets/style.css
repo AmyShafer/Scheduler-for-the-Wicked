@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Croissant+One&family=Darker+Grotesque&family=Flamenco&family=Merienda&family=Seaweed+Script&display=swap');
+:root {
+  --gothic-grey: #929292;
+  --fresh-dirt: #52322c;
+  --grave-roses: #bb0000; 
+  --grim-reaper: #030100;
+  --new-grass: #0c6800;
+  --blue-is-the-night: #04007E;
+  --tombstone-grey: #95746a;
+}
+
+body {
+  background-color: var(--gothic-grey);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Seaweed Script', cursive;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  font-family: 'Croissant One', cursive;
+  color: #fff;
+  border-left: 1px solid var(--new-grass);
+  padding: 10px;
+}
+
+textarea:active {
+  background-color: var(--new-grass);
+}
+
+textarea:focus {
+  background-color: var(--fresh-dirt);
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: var(--grim-reaper);
+  border-radius: 0;
+  border-bottom: 10px solid var(--grim-reaper);
+}
+
+.display-3 {
+  padding: 10px;
+  font-family: 'Merienda', cursive;
+  font-weight: 600;
+}
+
+.lead {
+  padding: 5px;
+  font-size: 2em;
+  font-family: 'Seaweed Script', cursive;
+}
+
+.description {
+  font-family: 'Flamenco', cursive;
+  font-size: 1.75em;
+  white-space: pre-wrap;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+  font-family: 'Belgrano', serif;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid var(--grave-roses);
+}
+
+.hour {
+  background-color: var(--grim-reaper);
+  color: var(--grave-roses);
+  border-top: 1px dashed var(--grave-roses);
+}
+
+.past {
+  background-color: var(--tombstone-grey);
+  color: blanchedalmond;
+}
+
+.present {
+  background-color: var(--grave-roses);
+  color: blanchedalmond;
+}
+
+.future {
+  background-color: var(--fresh-dirt);
+  color: blanchedalmond;
+}
+
+.saveBtn {
+  border-left: 1px solid blanchedalmond;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--grim-reaper);
+  color: var(--grave-roses);
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.saveBtn:hover {
+  border-left: 1px solid blanchedalmond;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--fresh-dirt);
+  color: var(--tombstone-grey);
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  color: var(--new-grass);
+}
+
+#currentDay {
+  color: var(--grave-roses);
+  font-family: 'Croissant One', cursive;
+  font-size: 1.75em;
+}

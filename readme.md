@@ -51,5 +51,5 @@ Improvement idea three.
 <a href="https://github.com/AmyShafer/Work-Day-Scheduler" target="_blank_">Work Day Scheduler Repository</a> 
 
 ## Deployed-url
-<a href="https://amyshafer.github.io/link link link/" target="_blank_">Work Day Scheduler Deployment URL</a> 
+<a href="https://amyshafer.github.io/Work-Day-Scheduler/" target="_blank_">Work Day Scheduler Deployment URL</a> 
 
