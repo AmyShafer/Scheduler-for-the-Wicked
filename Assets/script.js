@@ -39,8 +39,9 @@ function pastPresentFuture() {
 } 
 
 function userSaveEvent() {
-  var userToDo = document.getElementById('hour-4').value;
+  var userToDo = document.querySelectorAll('description')[4].innerHTML;
   localStorage.setItem("Time", userToDo);
+  console.log(userToDo);
   
     // loop through the multiple choices
     for (var i = 0; i < saveToDo.length; i++) {

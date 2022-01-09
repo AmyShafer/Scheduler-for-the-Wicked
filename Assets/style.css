@@ -14,12 +14,11 @@
 }
 
 body {
-  padding: 7px;
   background-color: var(--gothic-grey);
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
   font-family: 'Seaweed Script', cursive;
+  font-size: 16px;
+  padding: 7px;
+  line-height: 1;
 }
 
 textarea {
@@ -49,9 +48,9 @@ textarea:focus {
 }
 
 .display-3 {
-  padding: 10px;
   font-family: 'Merienda', cursive;
   font-weight: 600;
+  padding: 10px;
 }
 
 .hour {
@@ -61,17 +60,17 @@ textarea:focus {
 }
 
 .jumbotron {
-  text-align: center;
   background-color: transparent;
   color: var(--grim-reaper);
+  text-align: center;
   border-radius: 0;
   border-bottom: 10px solid var(--grim-reaper);
 }
 
 .lead {
-  padding: 5px;
-  font-size: 2em;
   font-family: 'Seaweed Script', cursive;
+  font-size: 2em;
+  padding: 5px;
 }
 
 .row {
@@ -81,27 +80,27 @@ textarea:focus {
 }
 
 .saveBtn {
-  border-left: 1px solid var(--go-towards-the-white);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
   background-color: var(--grim-reaper);
   color: var(--roses-on-your-grave);
   font-family: 'Darker Grotesque', sans-serif;
-}
-
-.saveBtn:hover {
   border-left: 1px solid var(--go-towards-the-white);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.saveBtn:hover {
   background-color: var(--worm-food);
   color: var(--grim-reaper);
   font-family: 'Darker Grotesque', sans-serif;
+  border-left: 1px solid var(--go-towards-the-white);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .saveBtn i:hover {
+  color: var(--mossy-headstone);
   font-size: 20px;
   transition: all 0.3s ease-in-out;
-  color: var(--mossy-headstone);
 }
 
 .time-block {
