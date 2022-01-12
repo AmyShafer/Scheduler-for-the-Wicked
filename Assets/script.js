@@ -1,6 +1,6 @@
 var now = moment().format('MMMM Do YYYY');
-var timeHere = document.getElementById('currentDay');
-timeHere.textContent = now;
+var dateHere = document.getElementById('currentDay');
+dateHere.textContent = now;
 var timeBlocks = document.getElementsByClassName('time-block');
 var saveToDo = document.querySelectorAll('description');
 
@@ -22,7 +22,7 @@ THEN the saved events persist
 function pastPresentFuture() {
   var presentHour = moment().hours(); // the block index that should be red
   var futureHours = 24 - presentHour; // how many blocks should be blacked out 
-  var pastHours = 16 - presentHour; // how many blocks should brown
+  var pastHours = 8 - presentHour; // how many blocks should brown
 
   $(".time-block").each(function(index) {
     // present time block should be black
