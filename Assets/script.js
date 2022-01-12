@@ -2,7 +2,7 @@ var now = moment().format('MMMM Do YYYY');
 var dateHere = document.getElementById('currentDay');
 dateHere.textContent = now;
 var timeBlocks = document.getElementsByClassName('time-block');
-//var saveToDo = document.querySelectorAll('description');
+var saveToDo = document.querySelectorAll('description');
 
 /* GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
@@ -38,22 +38,18 @@ function pastPresentFuture() {
   });
 } 
 
-/*
 function userSaveEvent() {
-  var userToDo = document.querySelectorAll('description');
-  localStorage.setItem("Time", userToDo);
-  console.log(userToDo);
-  
+
     // loop through the multiple choices
     for (var i = 0; i < saveToDo.length; i++) {
-      var currentButton = saveToDo[i];
+      var currentHourBlock = saveToDo[i];
       currentButton.addEventListener("click", function(event) {
-        var userSave = event.target.currentButton;
-        console.log(userSave);
-      });
+        if (currentHourBlock.value !== "") {
+          localStorage.setItem("Time", userToDo);
+        }
+        
     }   
 }
-*/
 
 pastPresentFuture();
 
