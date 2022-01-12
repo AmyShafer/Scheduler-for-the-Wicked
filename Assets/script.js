@@ -2,7 +2,7 @@ var now = moment().format('MMMM Do YYYY');
 var dateHere = document.getElementById('currentDay');
 dateHere.textContent = now;
 var timeBlocks = document.getElementsByClassName('time-block');
-var saveToDo = document.querySelectorAll('description');
+//var saveToDo = document.querySelectorAll('description');
 
 /* GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
@@ -21,15 +21,15 @@ THEN the saved events persist
 
 function pastPresentFuture() {
   var presentHour = moment().hours(); // the block index that should be red
-  var futureHours = 24 - presentHour; // how many blocks should be blacked out 
-  var pastHours = 8 - presentHour; // how many blocks should brown
-
+  
   $(".time-block").each(function(index) {
+    var currentHour = index + 9;
+    console.log(currentHour);
     // present time block should be black
-    if (index === presentHour) {
+    if (currentHour === presentHour) {
       timeBlocks[index].setAttribute("style", "background-color: #030100;");
     // past time blocks should be greyed out
-    } else if (index < presentHour) {
+    } else if (currentHour < presentHour) {
       timeBlocks[index].setAttribute("style", "background-color:#929292;");
     // future time blocks should be brown 
     } else {
@@ -38,8 +38,9 @@ function pastPresentFuture() {
   });
 } 
 
+/*
 function userSaveEvent() {
-  var userToDo = document.querySelectorAll('description')[4].innerHTML;
+  var userToDo = document.querySelectorAll('description');
   localStorage.setItem("Time", userToDo);
   console.log(userToDo);
   
@@ -52,36 +53,8 @@ function userSaveEvent() {
       });
     }   
 }
+*/
 
 pastPresentFuture();
-saveToDo.addEventListener("click", userSaveEvent);
 
 
-/*
-
-$(".time-block").each(function(index) {
-      var hourBlock = index;
-      if (currentHour === hourBlock) {
-        console.log("Here: " + hourBlock);
-        parseInt($(this).attr("id").split("-")[1]);
-      } 
-    });
-
-     // past time blocks
-    if (currentHour > presentHour) {
-      timeBlocks[index].setAttribute("style", "background-color: #52322c");
-    // future time blocks  
-    } else {
-      timeBlocks[index].setAttribute("style", "background-color:#030100");
-    }
-
-    for (var i = 0; i < timeBlocksArr.length; i++) {
-    var currentHour = timeBlocksArr[i];
-    currentHour.addEventListener("click", function(event) {
-      var userToDo = event.target.innerHTML;
-      console.log(userToDo);
-      localStorage.setItem("userAdd", userToDo);
-    });
-  }
-
-*/
