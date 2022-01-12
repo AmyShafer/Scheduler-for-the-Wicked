@@ -1,7 +1,7 @@
 
-# Work Day Scheduler
+# Scheduler for the Wicked
 
-Kiss double bookings good bye with this handy work day scheduler! 
+Grave digging? Reanimating of lifeless tissue? Coven meetings? Scrolls are so 7th century! Give Modern Paganism a chance with this brand new app for the morally corrupt and immortally upped.
 
 ## Table of contents
 * [Technologies](#technologies)
@@ -22,7 +22,7 @@ Users do not need setup.
 
 The following image shows the website is action!
 
-<img src="./assets/---.gif" width="550" height="300" alt="Work Day Scheduler"/>
+<img src="./assets/---.gif" width="550" height="300" alt="Scheduler for the Wicked"/>
 
 ## Resources-used
 
@@ -48,8 +48,8 @@ Improvement idea three.
 ---
 
 ## Github-url
-<a href="https://github.com/AmyShafer/Work-Day-Scheduler" target="_blank_">Work Day Scheduler Repository</a> 
+<a href="https://github.com/AmyShafer/Work-Day-Scheduler" target="_blank_">Scheduler for the Wicked Repository</a> 
 
 ## Deployed-url
-<a href="https://amyshafer.github.io/Work-Day-Scheduler/" target="_blank_">Work Day Scheduler Deployment URL</a> 
+<a href="https://amyshafer.github.io/Work-Day-Scheduler/" target="_blank_">Scheduler for the Wicked Deployment URL</a> 
 
