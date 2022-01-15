@@ -25,7 +25,6 @@ function pastPresentFuture() {
   
   $(".time-block").each(function(index) {
     var currentHour = index;
-    console.log(currentHour);
     // present time block should be black
     if (currentHour === presentHour) {
       timeBlocks[index].setAttribute("style", "background-color: #030100;");
@@ -40,13 +39,17 @@ function pastPresentFuture() {
 } 
 
 function saveUserTodo(event) {
-  var saveClicked = $(event.target);
-  //var taskToSave = saveClicked;
-
-  console.log(saveClicked);
+  var saveClicked = $(event.currentTarget).prev().val();
+  var key = $(event.currentTarget).prev().data("set");
+  localStorage.setItem(key, saveClicked);
 }
 
+$('btn').each(function() {
+  $(this).click(function(event) {
+    saveUserTodo(event)
+  })
+})
 
 pastPresentFuture();
-skullSave.on('click', '.saveBtn', saveUserTodo);
+//skullSave.on('click', '.saveBtn', saveUserTodo);
 
