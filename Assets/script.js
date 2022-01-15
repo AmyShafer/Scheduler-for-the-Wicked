@@ -44,7 +44,7 @@ function saveUserTodo(event) {
   localStorage.setItem(key, saveClicked);
 }
 
-$('btn').each(function() {
+$('.btn').each(function() {
   $(this).click(function(event) {
     saveUserTodo(event)
   })
