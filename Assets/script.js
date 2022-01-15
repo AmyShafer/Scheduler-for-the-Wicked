@@ -40,13 +40,10 @@ function pastPresentFuture() {
 } 
 
 function saveUserTodo(event) {
-  // convert button we pressed (`event.target`) to a jQuery DOM object
   var saveClicked = $(event.target);
+  //var taskToSave = saveClicked;
 
-  // get the parent `<li>` element from the button we pressed and remove it
-  var taskToSave = saveClicked.parent();
-
-  console.log(taskToSave);
+  console.log(saveClicked);
 }
 
 
