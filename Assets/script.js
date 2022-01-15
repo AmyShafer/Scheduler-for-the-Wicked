@@ -2,7 +2,8 @@ var now = moment().format('MMMM Do YYYY');
 var dateHere = document.getElementById('currentDay');
 dateHere.textContent = now;
 var timeBlocks = document.getElementsByClassName('time-block');
-var saveToDo = document.querySelectorAll('description');
+var skullSave = $("saveBtn");
+var saveToDo = localStorage.getItem("todo");
 
 /* GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
@@ -11,7 +12,7 @@ WHEN I scroll down (CHECK)
 THEN I am presented with timeblocks for standard business hours (CHECK)
 WHEN I view the timeblocks for that day (CHECK)
 THEN each timeblock is color coded to indicate whether it is in the past, present, or future (CHECK)
-WHEN I click into a timeblock
+WHEN I click into a timeblock (CHECK)
 THEN I can enter an event (CHECK)
 WHEN I click the save button for that timeblock 
 THEN the text for that event is saved in local storage
@@ -23,7 +24,7 @@ function pastPresentFuture() {
   var presentHour = moment().hours(); // the block index that should be red
   
   $(".time-block").each(function(index) {
-    var currentHour = index + 9;
+    var currentHour = index;
     console.log(currentHour);
     // present time block should be black
     if (currentHour === presentHour) {
@@ -38,19 +39,17 @@ function pastPresentFuture() {
   });
 } 
 
-function userSaveEvent() {
+function saveUserTodo(event) {
+  // convert button we pressed (`event.target`) to a jQuery DOM object
+  var saveClicked = $(event.target);
 
-    // loop through the multiple choices
-    for (var i = 0; i < saveToDo.length; i++) {
-      var currentHourBlock = saveToDo[i];
-      currentButton.addEventListener("click", function(event) {
-        if (currentHourBlock.value !== "") {
-          localStorage.setItem("Time", userToDo);
-        }
-        
-    }   
+  // get the parent `<li>` element from the button we pressed and remove it
+  var taskToSave = saveClicked.parent();
+
+  console.log(taskToSave);
 }
 
-pastPresentFuture();
 
+pastPresentFuture();
+skullSave.on('click', '.saveBtn', saveUserTodo);
 
