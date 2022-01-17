@@ -6,24 +6,6 @@ var skullSave = $("saveBtn");
 
 var todos = {};
 
-/*
-
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar (CHECK)
-WHEN I scroll down (CHECK)
-THEN I am presented with timeblocks for standard business hours (CHECK)
-WHEN I view the timeblocks for that day (CHECK)
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future (CHECK)
-WHEN I click into a timeblock (CHECK)
-THEN I can enter an event (CHECK)
-WHEN I click the save button for that timeblock (CHECK)
-THEN the text for that event is saved in local storage (CHECK)
-WHEN I refresh the page 
-THEN the saved events persist 
-
-*/
-
 /* Function color codes time blocks for past, present, and future */ 
 function pastPresentFuture() {
   var presentHour = moment().hours();
@@ -58,7 +40,6 @@ function saveUserTodo(event) {
 
 function displayToDos() {
   var todoList = JSON.parse(localStorage.getItem("todos"));
-  //todoList = todoList.split(",");
   console.log("TEST: " + todoList);
 
   for (var i = 0; i < todoList.length; i++) {
@@ -67,9 +48,7 @@ function displayToDos() {
     console.log("currentDataSet: " + currentDataSet);
     console.log("todoItem: " + todoItem);
     document.getElementById(currentDataSet).innerHTML = todoItem;
-    //console.log();
   }  
-  
 }
 
 /* jQuery event listener - listens for the save buttons being clicked */
