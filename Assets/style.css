@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Croissant+One&family=Darker+Grotesque&family=Flamenco&family=Merienda&family=Seaweed+Script&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
 
-/* SELECTORS are alphabetized */
-
+/* Color Used */
 :root {
   --gothic-grey: #929292;
   --fresh-dirt: #52322c;
   --roses-on-your-grave: #bb0000; 
   --grim-reaper: #030100;
   --mossy-headstone: #0c6800;
-  --blue-is-the-night: #04007E;
   --worm-food: #95746a;
   --go-towards-the-white: #fffff0;
 }
 
+/* SELECTORS are alphabetized */
 body {
   background-color: var(--gothic-grey);
   font-family: 'Seaweed Script', cursive;
@@ -97,6 +99,7 @@ textarea:focus {
   border-bottom-right-radius: 15px;
 }
 
+/*  Favicon hover color */
 .saveBtn i:hover {
   color: var(--mossy-headstone);
   font-size: 20px;
