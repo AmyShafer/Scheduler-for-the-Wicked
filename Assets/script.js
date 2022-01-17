@@ -3,9 +3,8 @@ var dateHere = document.getElementById('currentDay');
 dateHere.textContent = now;
 var timeBlocks = document.getElementsByClassName('time-block');
 var skullSave = $("saveBtn");
-var saveToDo = localStorage.getItem("todo");
 
-var todos = [];
+var todos = {};
 
 /*
 
@@ -52,20 +51,22 @@ function saveUserTodo(event) {
   //localStorage.setItem("todoList", todos);
   var savedItems = localStorage.getItem(key);
 
-  todos.push(key, savedItems); 
-  localStorage.setItem("todoList", todos);
+  todos[key] = savedItems;
+
+  localStorage.setItem("todos", JSON.stringify(todos));
 }
 
 function displayToDos() {
-  var todoList = JSON.stringify(localStorage.getItem("todoList"));
-  console.log("todoList: " + todoList);
- 
+  var todoList = JSON.parse(localStorage.getItem("todos"));
+  //todoList = todoList.split(",");
+  console.log("TEST: " + todoList);
+
   for (var i = 0; i < todoList.length; i++) {
     var currentDataSet = todoList[i]; // data-set plus the number at that index
     var todoItem = todoList[i + 1];
     console.log("currentDataSet: " + currentDataSet);
     console.log("todoItem: " + todoItem);
-    document.getElementById(currentDataSet).innerHTML = todoList[i + 1];
+    document.getElementById(currentDataSet).innerHTML = todoItem;
     //console.log();
   }  
   
