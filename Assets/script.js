@@ -42,13 +42,11 @@ function displayToDos() {
   var todoList = JSON.parse(localStorage.getItem("todos"));
   console.log("TEST: " + todoList);
 
-  for (var i = 0; i < todoList.length; i++) {
-    var currentDataSet = todoList[i]; // data-set plus the number at that index
-    var todoItem = todoList[i + 1];
-    console.log("currentDataSet: " + currentDataSet);
-    console.log("todoItem: " + todoItem);
-    document.getElementById(currentDataSet).innerHTML = todoItem;
-  }  
+  for (var key in todoList) {
+    var currentItem = todoList[key];
+    document.querySelector(`textarea[data-set="${key}"]`).textContent = currentItem;
+  } 
+
 }
 
 /* jQuery event listener - listens for the save buttons being clicked */
