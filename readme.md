@@ -10,6 +10,8 @@ Grave digging? Reanimating of lifeless tissue? Coven meetings? Scrolls are so 7t
 * [Possible-improvements](#possible-improvements)
 * [Github-url](#github-url)
 * [Deployed-url](#deployed-url)
+* [Author](#author)
+* [Licensing](#licensing)
 
 
 ## Technologies
@@ -43,6 +45,10 @@ A vampire desired the favicons take up the entire button and than changed to the
 
 ## Deployed-url
 <a href="https://amyshafer.github.io/Scheduler-for-the-Wicked/" target="_blank_">Scheduler for the Wicked Deployment URL</a> 
+
+## Author 
+
+This application was created by Amy U. Shafer. You can summon her at Amy.U.Shafer@gmail.com.
 
 ## Licensing 
 
