@@ -10,6 +10,8 @@ Grave digging? Reanimating of lifeless tissue? Coven meetings? Scrolls are so 7t
 * [Possible-improvements](#possible-improvements)
 * [Github-url](#github-url)
 * [Deployed-url](#deployed-url)
+* [Author](#author)
+* [Licensing](#licensing)
 
 
 ## Technologies
@@ -43,4 +45,33 @@ A vampire desired the favicons take up the entire button and than changed to the
 
 ## Deployed-url
 <a href="https://amyshafer.github.io/Scheduler-for-the-Wicked/" target="_blank_">Scheduler for the Wicked Deployment URL</a> 
+
+## Author 
+
+This application was created by Amy U. Shafer. You can summon her at Amy.U.Shafer@gmail.com.
+
+## Licensing 
+
+MIT License
+
+Copyright (c) 2022 Amy U. Shafer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 
