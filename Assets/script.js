@@ -1,17 +1,17 @@
-var now = moment().format('MMMM Do YYYY');
-var dateHere = document.getElementById('currentDay');
+const now = moment().format('MMMM Do YYYY');
+const dateHere = document.getElementById('currentDay');
 dateHere.textContent = now;
-var timeBlocks = document.getElementsByClassName('time-block');
-var skullSave = $("saveBtn");
+const timeBlocks = document.getElementsByClassName('time-block');
+const skullSave = $("saveBtn");
 
-var todos = {};
+const todos = {};
 
 /* Function color codes time blocks for past, present, and future */ 
 function pastPresentFuture() {
-  var presentHour = moment().hours();
+  const presentHour = moment().hours();
   
   $(".time-block").each(function(index) {
-    var currentHour = index;
+    const currentHour = index;
     // present time block should be black
     if (currentHour === presentHour) {
       timeBlocks[index].setAttribute("style", "background-color: #030100;");
@@ -27,20 +27,20 @@ function pastPresentFuture() {
 
 /* Function allows user to save their todos after closing/refreshing the page */
 function ghostTodos(event) {
-  var saveClicked = $(event.currentTarget).prev().val(); // the todo text
-  var key = $(event.currentTarget).prev().data("set"); // the index of the time block
+  const saveClicked = $(event.currentTarget).prev().val(); // the todo text
+  const key = $(event.currentTarget).prev().data("set"); // the index of the time block
   localStorage.setItem(key, saveClicked);
-  var savedItems = localStorage.getItem(key);
+  const savedItems = localStorage.getItem(key);
 
   todos[key] = savedItems;
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
 function summonToDos() {
-  var todoList = JSON.parse(localStorage.getItem("todos"));
+  const todoList = JSON.parse(localStorage.getItem("todos"));
 
-  for (var key in todoList) {
-    var currentItem = todoList[key];
+  for (let key in todoList) {
+    const currentItem = todoList[key];
     document.querySelector(`textarea[data-set="${key}"]`).textContent = currentItem;
   } 
 }
@@ -54,4 +54,3 @@ $('.btn').each(function() {
 
 pastPresentFuture();
 summonToDos();
-
